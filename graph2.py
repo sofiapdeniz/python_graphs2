@@ -40,7 +40,7 @@ def menor_caminho_bfs(grafo, origem, alvo):
                 nova_rota = rota_atual + [adj]
                 fila_busca.append((adj, nova_rota))
 
-    return []  # nenhum caminho encontrado
+    return []
 
 
 if __name__ == "__main__":
@@ -63,7 +63,7 @@ if __name__ == "__main__":
         ("A", "G"),
         ("D", "G"),
         ("A", "H"),
-        ("A", "Z")  # inexistente
+        ("A", "Z")
     ]
 
     for o, d in pares_teste:
